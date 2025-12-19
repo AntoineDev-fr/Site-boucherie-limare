@@ -7,7 +7,6 @@ import { CategoryCards } from "@/components/category-cards";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { business } from "@/lib/site";
-import Snowfall from 'react-snowfall';
 
 export default function HomePage() {
   return (

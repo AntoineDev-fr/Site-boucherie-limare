@@ -4,7 +4,6 @@ import "./globals.css";
 import { Manrope, Playfair_Display } from "next/font/google";
 import { ClientShell } from "@/components/layout/client-shell";
 import { business } from "@/lib/site";
-import Snowfall from 'react-snowfall';
 
 const display = Playfair_Display({
   subsets: ["latin"],
@@ -101,7 +100,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased">
-        <Snowfall color="#82C3D9" />
         <ClientShell>{children}</ClientShell>
       </body>
     </html>

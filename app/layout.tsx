@@ -1,4 +1,3 @@
-"use client";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Manrope, Playfair_Display } from "next/font/google";

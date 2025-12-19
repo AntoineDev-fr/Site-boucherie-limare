@@ -78,28 +78,31 @@ export default function CategoryPage({ params }: Props) {
         </div>
       </section>
 
-      <Section
-        eyebrow="Galerie"
-        title={`Les ${category.name.toLowerCase()} en images`}
-        description="Arrivages, préparations maison et plateaux prêts à servir. Les images sont optimisées et chargées en différé pour plus de performance."
-        className="bg-white/80"
-      >
-        <div className="grid gap-4 md:grid-cols-2">
-          {category.gallery.map((item) => (
-            <div key={item.src} className="relative h-52 overflow-hidden rounded-3xl md:h-72">
-              <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                className="object-cover transition duration-300 hover:scale-105"
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />
-            </div>
-          ))}
-        </div>
-      </Section>
+      {category.slug !== "fromages" ? (
+        <Section
+          eyebrow="Galerie"
+          title={`Les ${category.name.toLowerCase()} en images`}
+          description="Arrivages, preparations maison et plateaux prets a servir. Les images sont optimisees et chargees en differe pour plus de performance."
+          className="bg-white/80"
+        >
+          <div className="grid gap-4 md:grid-cols-2">
+            {category.gallery.map((item) => (
+              <div key={item.src} className="relative h-52 overflow-hidden rounded-3xl md:h-72">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  className="object-cover transition duration-300 hover:scale-105"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />
+              </div>
+            ))}
+          </div>
+        </Section>
+      ) : null}
+
     </div>
   );
 }

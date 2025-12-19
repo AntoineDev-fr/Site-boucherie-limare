@@ -41,6 +41,11 @@ export const metadata: Metadata = {
       }
     ]
   },
+  icons: {
+    icon: "/assets/logo.png",
+    shortcut: "/assets/logo.png",
+    apple: "/assets/logo.png"
+  },
   alternates: {
     canonical: "https://boucherie-limare.com"
   }

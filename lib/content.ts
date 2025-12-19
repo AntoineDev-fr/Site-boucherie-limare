@@ -89,9 +89,7 @@ export const categories: CategoryContent[] = [
     ],
     gallery: [
       { src: "/assets/traiteur1.png", alt: "Assortiment traiteur" },
-      { src: "/assets/traiteur2.png", alt: "Plateau cocktail" },
-      { src: "/assets/banniereplateau.png", alt: "Plateau traiteur gourmand" },
-      { src: "/assets/M et Mme Limare.png", alt: "Équipe de la boucherie" }
+      { src: "/assets/traiteur2.png", alt: "Plateau cocktail" }
     ]
   },
   {

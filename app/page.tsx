@@ -11,9 +11,9 @@ import Snowfall from 'react-snowfall';
 
 export default function HomePage() {
   return (
-    
     <div className="space-y-12 pb-16">
-      <Snowfall color="#82C3D9" />
+      
+      
       <Hero
         eyebrow="Savoir-faire artisanal"
         title="Viandes françaises, charcuterie maison et traiteur sur mesure"
@@ -150,8 +150,6 @@ export default function HomePage() {
       >
         <CategoryCards />
       </Section>
-
-      
     </div>
   );
 }

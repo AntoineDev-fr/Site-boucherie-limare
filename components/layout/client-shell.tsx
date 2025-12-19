@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { CookieBanner } from "@/components/cookie-banner";
+import { Snowfall } from "@/components/snowfall";
 
 type Props = { children: React.ReactNode };
 
@@ -17,6 +18,7 @@ export function ClientShell({ children }: Props) {
 
   return (
     <>
+      <Snowfall />
       <Header />
       <main className="container max-w-6xl pt-28">{children}</main>
       <Footer />

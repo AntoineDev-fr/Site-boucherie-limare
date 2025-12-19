@@ -39,3 +39,28 @@ a {
   white-space: nowrap;
   border-width: 0;
 }
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background: #fff;
+  border-radius: 9999px;
+  opacity: 0.9;
+  animation-name: snowfall-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes snowfall-fall {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
